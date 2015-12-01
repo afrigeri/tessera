@@ -113,7 +113,7 @@ uri     tilelive URI to serve
 
 Options:
    -C SIZE, --cache-size SIZE          Set the cache size (in MB)  [10]
-   -c CONFIG, --config CONFIG          Provide a configuration file
+   -c CONFIG, --config CONFIG          Provide a configuration file (must have .json extension)
    -p PORT, --port PORT                Set the HTTP Port  [8080]
    -r MODULE, --require MODULE         Require a specific tilelive module
    -S SIZE, --source-cache-size SIZE   Set the source cache size (in # of sources)  [10]
@@ -144,6 +144,7 @@ This is what a configuration file looks like:
   "/b": "mbtiles:///Users/seth/archive.mbtiles"
 }
 ```
+The configuration file must have a .json extension
 
 Header values are treated as
 [Mustache](http://mustache.github.io/mustache.5.html) (technically
